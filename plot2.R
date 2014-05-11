@@ -8,7 +8,7 @@ data <- data.table(data)
 data <- data[Date %in% c("1/2/2007","2/2/2007")]
 
 
-png("plot2.png", height=480, width=480)
+png("plot2.png", height=480, width=480, bg="transparent")
 
 plot(data$DateTime, data$Global_active_power, pch=NA, xlab="",ylab="Global Active Power (kilowatts)")
 lines(data$DateTime, data$Global_active_power)

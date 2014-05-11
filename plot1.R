@@ -5,7 +5,7 @@ data <- data.table(data)
 
 data <- data[Date %in% c("1/2/2007","2/2/2007")]
 
-png("plot1.png", height=480, width=480)
+png("plot1.png", height=480, width=480, bg="transparent")
 
 hist(data$Global_active_power, col='red', xlab = 'Global Active Power (kilowatts)', main = 'Global Active Power')
 
